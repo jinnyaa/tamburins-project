@@ -25,7 +25,9 @@
 
 <body> 
     <header>
+        <a href="#">
         <img src="./images/logo-black.png" alt="logo" class="go-to-top">
+        </a>
     </header>
 
     <main>
@@ -59,14 +61,12 @@
         <!-- scent of the new road -->
         <section class="scentofthenewroad">
                     <div class="scentofthenewroad-txt-box">
+                    <img src="./images/logo-white.png" alt="">
                     <p>5 Scents, Car Diffuser</p>
                     <P>SCENT OF THE NEW ROAD</P>
                     </div>
                     <div class="scentofthenewroad-img">
                     <img src="./images/scentofthenewroad-1.jpg" alt="product">
-                    </div>
-                    <div class="scentofthenewroad-logo">
-                    <img src="./images/logo-white.png" alt="">
                     </div>
             </div>
         </section>
@@ -77,24 +77,36 @@
                 <div class="gotodetail-line-v line-v">
                     <span style="transform: translate(0px,0px);"></span>
                 </div>
-                <div class="gotodetail-line-h line-h">
-                    <span style="transform: translate(0px,0px);"></span>
-                </div>
             </div>
 
-            <div class="gotodetail-popup">
+            <div class="gotodetail-container">
+            <div class="gotodetail-popup gotodetail-line-h line-h">
+                <div class="gotodetail-popup-txt-box">
                 <p>POP-UP EXHIBITION in TTUKSEOM, SEOUL</p>
                 <p>with CAR DIFFUSER POP-UP EXHIBITION</p>
-                <img src="./images/gotodetail-popup.jpg" alt="popup">
+                </div>
+
+                <div class="gotodetail-popup-a-container">
+                <div class="gotodetail-popup-a-box">
                 <a href="#">POP-UP EXHIBITION</a>
-                <a href="#">팝업스토어 예약하기</a>
+                <a href="#" class="active">팝업스토어 예약하기</a>
+                </div>
+                <img src="./images/gotodetail-popup.jpg" alt="popup">
+                </div>
             </div>
             <div class="gotodetail-cardiffuser">
+                <div class="gotodetail-cardiffuser-txt-box">
                 <p>MULTIPLE HARMONIES OF SCENTS</p>
                 <p>SPEICAL DRIVING with TAMBURINS  CAR DIFFUSER</p>
+                </div>
+                <div class="gotodetail-popup-a-container">
+                <div class="gotodetail-popup-a-box">
+                    <a href="#">CAR DIFFUSER</a>
+                    <a href="#" class="active">카 디퓨저</a>
+                    </div>
                 <img src="./images/gotodetail-cardiffuser.jpg" alt="car diffuser">
-                <a href="#">CAR DIFFUSER</a>
-                <a href="#">카 디퓨저</a>
+                </div>
+            </div>
             </div>
             <div class="gotodetail-line">
                 <div class="gotodetail-line-v line-v">
@@ -107,52 +119,69 @@
         <section class="rotate-new">
             <h1>NEW</h1>
             <div class="rotate-wrap"
-                style=" transform: translate(0px, 0px); inset: 0px auto auto 0px; margin: 0px; max-width: 1499px; width: 1499px; max-height: 625.562px; height: 625.562px; padding: 0px;">
+                style=" transform: translate(0px, 0px);">
                 <div class="rotate-img" style="transform: translate(0px, 0px);">
                     <img src="./images/rotate-new.png" alt="">
                 </div>
             </div>
         </section>
 
-        <!-- scents -->
         <section class="scents">
-            <div class="lilycoco-container">
-                <h4>LILY COCO</h4>
-                <p>Moist lily | Verdant bamboo | Creamy coconut</p>
-            </div>
-            <div class="bigalico-container">
-                <h4>BIGALICO</h4>
-                <p>Bitter orange | Cedarwood | Sweet licorice</p>
-            </div>
-            <div class="blueforest-container">
-                <h4>BLUE FOREST</h4>
-                <p>Misty cypress forest | Sweet herb | Warm amber</p>
-            </div>
-            <div class="chamo-container">
-                <h4>CHAMO</h4>
-                <p>Thick chamomile | Soft wood grain | Musk</p>
-            </div>
+            <article id="scents-box-1" class="scents-box">
+                <div class="ghost-box"></div>
+                <div class="scents-txt-wrapper">
+                    <h3>LILY COCO</h2>
+                    <p>Moist lily | Verdant bamboo | Creamy coconut</p>
+                </div>
+            </article>
+
+            <article id="scents-box-2" class="scents-box">
+                <div class="ghost-box"></div>
+                <div class="scents-txt-wrapper">
+                    <h3>BIGALICO</h3>
+                    <p>Moist lily | Verdant bamboo | Creamy coconut</p>
+                </div>
+            </article>
+
+            <article id="scents-box-3" class="scents-box">
+                <div class="ghost-box"></div>
+                <div class="scents-txt-wrapper">
+                    <h3>BLUE FOREST</h3>
+                    <p>Moist lily | Verdant bamboo | Creamy coconut</p>
+                </div>
+            </article>
+
+            <article id="scents-box-4" class="scents-box">
+                <div class="ghost-box"></div>
+                <div class="scents-txt-wrapper">
+                    <h3>CHAMO</h3>
+                    <p>Thick chamomile | Soft wood grain | Musk</p>
+                </div>
+            </article>
         </section>
 
-       <section class="gotoscents-line ">
-        <div class="gotoscents-line-h line-h">
-            <span style="transform: translate(0px,0px);"></span>
-        </div>
-        <div class="gotoscents-line">
-            <a href="#">제품 리스트 →</a>
-            <a href="#">시그니처 향 →</a>
-        </div>
-        <div class="gotoscents-line-v line-v">
-            <span style="transform: translate(0px,0px);"></span>
-        </div>
-       </section>
+
+
+
+  <section class="gotoscents-line ">
+    <div class="gotoscents-line-h line-h">
+        <span style="transform: translate(0px,0px);"></span>
+    </div>
+    <div class="gotoscents-line-txt-box">
+        <a href="#">제품 리스트 →</a>
+        <a href="#">시그니처 향 →</a>
+    </div>
+    <div class="gotoscents-line-v line-v">
+        <span style="transform: translate(0px,0px);"></span>
+    </div>
+   </section>
 
        <!-- product-detail -->
        <section class="product-detail">
         <div class="product-detail-txt-wrap">
             <div class="product-detail-txt-box1">
                 <h3>탬버린즈의</h3>
-                <h3>새로운 미학을 경험해보세요.</h3>
+                <h3><strong>새로운 미학</strong>을 경험해보세요.</h3>
             </div>
             <span></span>
             <div class="product-detail-txt-box2">
@@ -161,21 +190,39 @@
             </div>
         </div>
         <div class="product-detail-txt-box3">
-            <p>부드러운 가죽으로 싸여진 유려한 조약돌과 같은 탬버린즈만의 카디퓨저는 기분 좋은 웃음을 지을 때 생기는 동그란 보조개처럼 나의 일상의 여정에 편안하면서도 감각적인 경험을 더해줍니다.
+            <p>부드러운 가죽으로 싸여진 유려한 조약돌과 같은 탬버린즈만의 카디퓨저는 기분 좋은 웃음을 지을 때 생기는 동그란 보조개처럼 나의 일상의 여정에 편안하면서도 감각적인 경험을 더해줍니다.<br>
                 The Car diffuser, which is like a flowing pebble wrapped in soft leather, adds a comfortable and sensuous experience to your daily journey, like the round dimples that appear when you smile happily.</p>
         </div>
         <div class="product-detail-logo">
+            <img src="./images/logo-black.png" alt="">
+            <img src="./images/logo-black.png" alt="">
             <img src="./images/logo-black.png" alt="">
         </div>
        </section>
 
        <!-- bg-img-tamburins -->
        <section class="bg-img-tamburins">
-        <img src="./images/bg-img-tamburins.jpg" alt="">
+        <!-- <img src="./images/bg-img-tamburins.jpg" alt=""> -->
        </section>
 
        <!-- double-txt -->
+
        <section class="double-txt">
+        <div class="double-txt-img-box">
+        <div class="double-txt-img-1">
+            <img src="./images/double-txt-1.jpg" alt="">
+        </div>
+        <div class="double-txt-img-2">
+            <img src="./images/double-txt-2.jpg" alt="">
+        </div>
+        <div class="double-txt-img-3">
+            <img src="./images/double-txt-3.jpg" alt="">
+        </div>
+    </div>
+        
+
+
+        <div class="double-txt-wrap">
         <div class="rows">
             <div class="h1">부드러운</div>
             <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
@@ -228,34 +275,29 @@
             <div class="h1">More Special.</div>
             <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
         </div>
+        </div>
 
-        <div class="double-txt-img-1">
-            <img src="./images/double-txt-1.jpg" alt="">
-        </div>
-        <div class="double-txt-img-2">
-            <img src="./images/double-txt-2.jpg" alt="">
-        </div>
-        <div class="double-txt-img-3">
-            <img src="./images/double-txt-3.jpg" alt="">
-        </div>
+        
        </section>
 
-       <section class="double-txt- bottom-line">
-        <div class="gotoscents-line-v line-v">
+       <section class="double-txt-bottom-line">
+        <div class="bottom-line-v line-v">
             <span style="transform: translate(0px,0px);"></span>
         </div>
-        <div class="gotoscents-line-h line-h">
+        <div class="bottom-line-h line-h">
             <span style="transform: translate(0px,0px);"></span>
         </div>
        </section>
 
        <!-- multiple harmonies -->
        <section class="multipleharmonies">
+        <div class="multipleharmonies-ghost-box"></div>
         <div class="multipleharmonies-txt-box">
             <h4>MULTIPLE HARMONIES OF SCENTS</h4>
             <p>우리가 차 안에서 경험하는 다양한 순간들을 탬버린즈의 새로운 향과 함께 더 생동감 있게 느껴보세요.</p>
         </div>
 
+        <div class="multipleharmonies-img-box">
         <div class="multipleharmonies-1">
             <img src="./images/multipleharmonies-1.jpg" alt="product-img">
         </div>
@@ -264,6 +306,7 @@
         </div>
         <div class="multipleharmonies-3">
             <img src="./images/multipleharmonies-3.jpg" alt="product-img">
+        </div>
         </div>
        </section>
 
@@ -277,51 +320,62 @@
         
         <div class="popupstore-img-container">
             <div class="popupstore-img-cols cols-1">
-                <div><img src="./images/popupstore-1.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-2.jpg" alt="popupstore"></div>
+                <img src="./images/popupstore-1-1.png" alt="popupstore">
+                <img src="./images/popupstore-2-1.png" alt="popupstore">
             </div>
             <div class="popupstore-img-cols cols-2">
-                <div><img src="./images/popupstore-3.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-4.jpg" alt="popupstore"></div>
+                <img src="./images/popupstore-3-1.png" alt="popupstore">
+                <img src="./images/popupstore-4-1.png" alt="popupstore">
             </div>
             <div class="popupstore-img-cols cols-3">
-                <div><img src="./images/popupstore-5.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-6.jpg" alt="popupstore"></div>
+                <img src="./images/popupstore-5-1.png" alt="popupstore">
+                <img src="./images/popupstore-6-1.png" alt="popupstore">
             </div>
             <div class="popupstore-img-cols cols-4">
-                <div><img src="./images/popupstore-7.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-8.jpg" alt="popupstore"></div>
+                <img src="./images/popupstore-7-1.png" alt="popupstore">
+                <img src="./images/popupstore-8-1.png" alt="popupstore">
             </div>
             <div class="popupstore-img-cols cols-5">
-                <div><img src="./images/popupstore-9.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-10.jpg" alt="popupstore"></div>
-                <div><img src="./images/popupstore-11.jpg" alt="popupstore"></div>
+               <img src="./images/popupstore-9-1.png" alt="popupstore">
+                <img src="./images/popupstore-10-1.png" alt="popupstore">
+                <img src="./images/popupstore-11-1.png" alt="popupstore">
             </div>
         </div>
        </section>
 
        <!-- main-bottom -->
        <section class="main-bottom-line">
-        <div class="gotoscents-line-v line-v">
+        <div class="main-bottom-line-v line-v">
             <span style="transform: translate(0px,0px);"></span>
         </div>
-        <div class="gotoscents-line-h line-h">
+        <div class="main-bottom-line-h line-h">
             <span style="transform: translate(0px,0px);"></span>
         </div>
-
-        <img src="./images/logo-black.png" alt="">
        </section>
 
        <footer>
+        <div class="footer-logo">
+            <img src="./images/logo-black.png" alt="">
+            </div>
+
+            <div class="footer-txt">
          <p>주&#41;아이아이컴바인드 | 사업자등록번호: 119-86-38589 | 대표자: 김한국 | 서울특별시 마포구 어울마당로5길 41 | 대표번호: 1644-1246 | 이메일:Cs@Tamburins.Com | 개인정보 보호 책임자: 정태호 | 호스팅 서비스 사업자: Aws | 통신판매업신고: 제 2014-서울마포-1050 호사업자정보확인</p>
          <p>고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다.서비스 가입사실 확인</p>
-         <span></span>
+        </div>
 
          <div class="git">
             <a href="#">Jinny Portfolio</a>
-            <div class="go-to-git"></div>
+            <div class="go-to-git">
+                <a href="#">
+                <img src="./images/north_east_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </a>
+            </div>
             <a  href="#">Git Portfolio</a>
-            <div class="go-to-git"></div>
+            <div class="go-to-git">
+                <a href="#">
+                <img src="./images/north_east_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </a>
+            </div>
          </div>
        </footer>
     </main>

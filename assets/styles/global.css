@@ -1,4 +1,18 @@
 @charset "UTF-8";
 
+body{font-family: var(--primary-font-en);}
 header{width: 100%; height: 50px; position: relative; padding: 0 24px; position: fixed; z-index: 9999999;}
 header img{width: 10%; position: absolute; top: 50%; transform: translateY(-50%);}
+
+
+footer{width: 100%; height: 100%;}
+.footer-logo{display: flex; justify-content: center; margin-top: 50px;}
+.footer-txt{display: flex; margin: 200px 0 50px; justify-content: space-between; padding: 0 24px;}
+.footer-txt p:nth-child(1){width: 40%; font-size: var(--desc-size-sx); word-break: keep-all;}
+.footer-txt p:nth-child(2){width: 40%; font-size: var(--desc-size-sx); word-break: keep-all; text-align: right;}
+
+.git{border-top: 1px solid #0000007c; padding: 50px 24px; display: flex; justify-content: end;}
+.git .go-to-git{width: 50px; height: 50px; border-radius: 50%; background-color: #000; margin-right: 20px;}
+.git .go-to-git a{width: 100%; height: 100%; display: block; position: relative;}
+.git .go-to-git img{position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);}
+.git a{line-height: 50px; margin-right: 20px;}
