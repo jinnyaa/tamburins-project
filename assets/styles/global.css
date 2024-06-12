@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-body{font-family: var(--primary-font-en);}
+html{scroll-behavior: smooth;}
+body{font-family: var(--primary-font-en); overflow-x: hidden;}
+
 header{width: 100%; height: 50px; position: relative; padding: 0 24px; position: fixed; z-index: 9999999;}
 header img{width: 10%; position: absolute; top: 50%; transform: translateY(-50%);}
 

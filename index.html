@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./js/index.js">
     <!-- js -->
     <script src="./assets/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
     <!-- plugIn -->
 
 </head>
@@ -35,28 +39,28 @@
         <section class="main-top">
             <div class="main-top-container">
             <div class="main-top-img-container">
-             <img src="./images/main-top-1.jpg" alt="img1">
-             <img src="./images/main-top-2.jpg" alt="img2">
-             <img src="./images/main-top-3.jpg" alt="img3">
-             <img src="./images/main-top-4.jpg" alt="img4">
-             <img src="./images/main-top-5.jpg" alt="img5">
-             <img src="./images/main-top-6.jpg" alt="img6">
-             <img src="./images/main-top-7.jpg" alt="img7">
+             <img src="./images/main-top-1.jpg" alt="img1" id="main-1">
+             <img src="./images/main-top-2.jpg" alt="img2" id="main-2">
+             <img src="./images/main-top-3.jpg" alt="img3" id="main-3">
+             <img src="./images/main-top-4.jpg" alt="img4" id="main-4">
+             <img src="./images/main-top-5.jpg" alt="img5" id="main-5">
+             <img src="./images/main-top-6.jpg" alt="img6" id="main-6">
+             <img src="./images/main-top-7.jpg" alt="img7" id="main-7">
              </div>
              </div>
+             
              <div class="main-top-logo">
                 <img src="./images/logo-black.png" alt="logo">
              </div>
         </section>
 
         <section class="maintop-line">
-            <div class="maintop-line-h line-h">
-                <span style="transform: translate(0px,0px);"></span>
+            <div class="maintop-line-h">
             </div>
-            <div class="maintop-line-v line-v">
-                <span style="transform: translate(0px,0px);"></span>
+            <div class="maintop-line-v">
             </div>
         </section>
+            
 
         <!-- scent of the new road -->
         <section class="scentofthenewroad">
@@ -88,8 +92,8 @@
 
                 <div class="gotodetail-popup-a-container">
                 <div class="gotodetail-popup-a-box">
-                <a href="#">POP-UP EXHIBITION</a>
-                <a href="#" class="active">팝업스토어 예약하기</a>
+                <a href="#" class="en" >POP-UP EXHIBITION</a>
+                <a href="#" class="ko">팝업스토어 예약하기</a>
                 </div>
                 <img src="./images/gotodetail-popup.jpg" alt="popup">
                 </div>
@@ -101,8 +105,8 @@
                 </div>
                 <div class="gotodetail-popup-a-container">
                 <div class="gotodetail-popup-a-box">
-                    <a href="#">CAR DIFFUSER</a>
-                    <a href="#" class="active">카 디퓨저</a>
+                    <a href="#" class="en">CAR DIFFUSER</a>
+                    <a href="#" class="ko">카 디퓨저</a>
                     </div>
                 <img src="./images/gotodetail-cardiffuser.jpg" alt="car diffuser">
                 </div>
@@ -117,9 +121,8 @@
 
         <!-- rotate-new -->
         <section class="rotate-new">
-            <h1>NEW</h1>
-            <div class="rotate-wrap"
-                style=" transform: translate(0px, 0px);">
+            <!-- <h1>NEW</h1> -->
+            <div class="rotate-wrap">
                 <div class="rotate-img" style="transform: translate(0px, 0px);">
                     <img src="./images/rotate-new.png" alt="">
                 </div>
@@ -194,9 +197,11 @@
                 The Car diffuser, which is like a flowing pebble wrapped in soft leather, adds a comfortable and sensuous experience to your daily journey, like the round dimples that appear when you smile happily.</p>
         </div>
         <div class="product-detail-logo">
+            <div class="logo-moving">
             <img src="./images/logo-black.png" alt="">
             <img src="./images/logo-black.png" alt="">
             <img src="./images/logo-black.png" alt="">
+            </div>
         </div>
        </section>
 
@@ -205,8 +210,8 @@
         <!-- <img src="./images/bg-img-tamburins.jpg" alt=""> -->
        </section>
 
-       <!-- double-txt -->
 
+       <!-- double-txt -->
        <section class="double-txt">
         <div class="double-txt-img-box">
         <div class="double-txt-img-1">
@@ -218,64 +223,31 @@
         <div class="double-txt-img-3">
             <img src="./images/double-txt-3.jpg" alt="">
         </div>
-    </div>
+         </div>
+
+
+         
         
 
 
         <div class="double-txt-wrap">
-        <div class="rows">
+        <div class="split-word">
             <div class="h1">부드러운</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">조약돌 모양의</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">카 디퓨저는</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">당신의 드라이빙</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">시간을 특별하게</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">만들어 줍니다.</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">The Soft</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">Cobblestone-</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">Shaped Car</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">Diffuser Will</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">Makesyour</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">Driving Time</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
-        </div>
-        <div class="rows">
             <div class="h1">More Special.</div>
-            <div class="dt-ovr" style="transform: translate(0px, 0ox, 0ox);"></div>
         </div>
         </div>
+
 
         
        </section>
@@ -379,6 +351,8 @@
          </div>
        </footer>
     </main>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
