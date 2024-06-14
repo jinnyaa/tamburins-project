@@ -1,15 +1,14 @@
 
-// main-top
-window.scroll({behavior: 'smooth'});
 
+// main-top
 const images = document.querySelectorAll('.main-top-img-container img');
 images.forEach(image => {
-    image.style.transition = 'transform 1s ease-out';
+    image.style.transition = 'transform .5s ease-out';
 });
-
 
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
+    const maxTransformValue = 1000;  // 예시: 최대 transform 값
 
     const image1 = document.getElementById('main-1');
     const image2 = document.getElementById('main-2');
@@ -19,14 +18,37 @@ window.addEventListener('scroll', function() {
     const image6 = document.getElementById('main-6');
     const image7 = document.getElementById('main-7');
 
-	image1.style.transform = `translateY(${scrollPosition * -0.8}px) translateX(${scrollPosition * -1}px)`;
-	image2.style.transform = `translateY(${scrollPosition * -0.8}px) translateX(${scrollPosition * 0.1}px)`;
-	image3.style.transform = `translateY(${scrollPosition * -0.6}px) translateX(${scrollPosition * 1}px)`;
-	image4.style.transform = `translateY(${scrollPosition * 0.5}px) translateX(${scrollPosition * -1.5}px)`;
-	image5.style.transform = `translateY(${scrollPosition * 1}px) translateX(${scrollPosition * -1.2}px)`;
-	image6.style.transform = `translateY(${scrollPosition * 1.2}px) translateX(${scrollPosition * 2}px)`;
-	image7.style.transform = `translateY(${scrollPosition * 0}px) translateX(${scrollPosition * 1.2}px)`;
+    image1.style.transform = `translateY(${Math.min(scrollPosition * -0.8, maxTransformValue)}px) translateX(${Math.min(scrollPosition * -1, maxTransformValue)}px)`;
+    image2.style.transform = `translateY(${Math.min(scrollPosition * -0.8, maxTransformValue)}px) translateX(${Math.min(scrollPosition * 0.1, maxTransformValue)}px)`;
+    image3.style.transform = `translateY(${Math.min(scrollPosition * -0.6, maxTransformValue)}px) translateX(${Math.min(scrollPosition * 1, maxTransformValue)}px)`;
+    image4.style.transform = `translateY(${Math.min(scrollPosition * 0.5, maxTransformValue)}px) translateX(${Math.min(scrollPosition * -1.5, maxTransformValue)}px)`;
+    image5.style.transform = `translateY(${Math.min(scrollPosition * 1, maxTransformValue)}px) translateX(${Math.min(scrollPosition * -1.2, maxTransformValue)}px)`;
+    image6.style.transform = `translateY(${Math.min(scrollPosition * 1.2, maxTransformValue)}px) translateX(${Math.min(scrollPosition * 2, maxTransformValue)}px)`;
+    image7.style.transform = `translateY(${Math.min(scrollPosition * 0, maxTransformValue)}px) translateX(${Math.min(scrollPosition * 1.2, maxTransformValue)}px)`;
+});
 
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var lines = document.querySelectorAll('.line');
+
+  function toggleActiveClass() {
+      var screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      lines.forEach(function(line) {
+          var bounding = line.getBoundingClientRect();
+
+          if (bounding.top <= screenHeight / 2 && bounding.bottom >= screenHeight / 2) {
+              line.classList.add('active');
+          }
+      });
+  }
+
+  toggleActiveClass();
+
+  window.addEventListener('scroll', toggleActiveClass);
 });
 
 
@@ -44,13 +66,19 @@ window.addEventListener('scroll', function() {
         rotateAngle = Math.max(0, rotateAngle);
 
 
-        var scaleFactor = 1 + Math.abs(elementRect.top) / (0.5 * viewportHeight); // 빠르게 확대
+        var scaleFactor = 1 + Math.abs(elementRect.top) / (0.5 * viewportHeight); 
 
         document.querySelector('.rotate-img img').style.transform = 
             'translate(-50%, -50%) rotate(' + rotateAngle + 'deg) scale(' + scaleFactor + ')';
     }
 });
 
+// product-detail
+const left = document.querySelector('#logo-moving-left')
+
+window.addEventListener("mousemove", (e) => {
+ left.style.setProperty('--distance-left', e.offsetX / -3 + "px")
+})
 
 
 
@@ -91,6 +119,105 @@ function createAnimation() {
 }
 
 
+// double-txt Parallax Effect
+function createParallaxEffect() {
+  const doubleimages = document.querySelectorAll('.double-txt-img-box img');
+
+  doubleimages.forEach((img, index) => {
+    const speed = img.getAttribute('data-speed');
+    const parallaxTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.double-txt-img-box',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+      }
+    });
+
+    parallaxTL.to(img, {
+      yPercent: (index + 1) * speed * 20,
+      ease: 'none'
+    });
+  });
+}
+
+createParallaxEffect();
 
 
+
+
+// multipleharmonies Parallax Effect
+function createParallaxEffectMultipleHarmonies() {
+  const images = document.querySelectorAll('.multipleharmonies-img-box img');
+
+  images.forEach((img, index) => {
+      const speed = img.getAttribute('data-speed');
+      const parallaxTL = gsap.timeline({
+          scrollTrigger: {
+              trigger: '.multipleharmonies-img-box',
+              start: 'top center', 
+              end: 'bottom top',   
+              scrub: true,
+          }
+      });
+
+      parallaxTL.to(img, {
+          yPercent: (index + 1) * speed * 10,
+          ease: 'none'
+      });
+  });
+}
+
+createParallaxEffectMultipleHarmonies();
+
+// multipleharmonies Parallax Effect
+function createParallaxEffectMultipleHarmonies() {
+  const multipleharmoniesimages = document.querySelectorAll('.multipleharmonies-img-box img');
+
+  multipleharmoniesimages.forEach((img, index) => {
+      const multipleharmoniesspeed = img.getAttribute('data-speed');
+      const multipleharmoniesparallaxTL = gsap.timeline({
+          scrollTrigger: {
+              trigger: '.multipleharmonies-img-box',
+              start: 'top center', 
+              end: 'bottom top',   
+              scrub: true,
+          }
+      });
+
+      multipleharmoniesparallaxTL.to(img, {
+          yPercent: (index + 1) * multipleharmoniesspeed * 10,
+          ease: 'none'
+      });
+  });
+}
+
+createParallaxEffectMultipleHarmonies();
+
+
+
+
+// popupstore Parallax Effect
+function createParallaxEffectPopupstore() {
+  const images = document.querySelectorAll('.popupstore-img-cols img');
+
+  images.forEach((img, index) => {
+      const speed = img.getAttribute('data-speed');
+      const parallaxTL = gsap.timeline({
+          scrollTrigger: {
+              trigger: '.popupstore',
+              start: 'top top', 
+              end: 'bottom bottom',   
+              scrub: true,
+          }
+      });
+
+      parallaxTL.to(img, {
+          yPercent: (index + 1) * speed * -10,
+          ease: 'none'
+      });
+  });
+}
+
+createParallaxEffectPopupstore();
 
