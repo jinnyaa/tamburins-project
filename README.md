@@ -1,13 +1,15 @@
-## 📌Personal Project 완료 보고서_Tamburins
+# 📌Personal Project 완료 보고서_Tamburins
 
+##### Skils: <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Java--Script-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=black"/>
 ##### 프로젝트 기간: 2024.06.06 ~ 2404.06.00 
 ##### 프로젝트명: WEB PUBLISHING
-##### Skils: <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Java--Script-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=black"/>
 ##### 프로젝트 목표: 기존 브랜드 컨셉을 유지하면서, 탬버린즈의 신제품인 차량디퓨저 홍보를 메인으로하는 웹사이트를 제작 및 구현
 ##### 기대 효과: 신선하고 혁신적인 디자인을 통해 사용자 경험을 향상시키고자 함
+<br>
 
 ---
-#### 📚프로젝트 진행순서📚
+#### 📚프로젝트 진행순서📚<br>
+
 <strong>  | 
 :--- |
 <strong>분석 단계  |
@@ -22,7 +24,7 @@
 
 ---
 
-#### ⏳프로젝트 과정 및 결과⏳
+#### <br>⏳프로젝트 과정 및 결과⏳
 <strong>  | 
 :--- |
 <strong>01.브랜드 및 프로젝트 목표 설정  |
@@ -40,7 +42,7 @@
 
 ---
 
-#### ✅프로젝트 결과✅
+#### <br>✅프로젝트 결과✅
 
 1. <strong>신제품 홍보 및 브랜드 이미지 강화:</strong> 신제품 ‘차량 디퓨저’를 현대적이고 매력적으로 소개하는 웹사이트를 구축
 
@@ -56,11 +58,11 @@
   
 ---
 
-#### 👀프로젝트 리뷰👀
+#### <br>👀프로젝트 리뷰👀
 
 이번 탬버린즈 프로젝트는 브랜드 이미지를 강화하고 신제품을 시각적으로 매력적있게 보여주기 위해 새로운 디자인과 기술적 구현에 중점을 두었습니다. 그러나 프로젝트 진행 과정에서 몇 가지 어려움을 겪었습니다. 이를 해결하기 위해 다음과 같은 접근 방식을 취했습니다.
 
-##### 겪은 어려움과 해결 방법
+#### 겪은 어려움과 해결 방법
 1. <strong>자연스러운 애니메이션 구현</strong>
 
     - 초기에 GSAP를 사용하여 애니메이션을 구현했을 때 페이지 로딩이 버벅거리는 현상이 발생했습니다. 이를 해결하기 위해 GSAP 코드를 최소화하고, 필수적인 애니메이션만 유지하여 성능을 최적화했습니다.
