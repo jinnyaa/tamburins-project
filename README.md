@@ -1,7 +1,7 @@
 # 📌Personal Project 완료 보고서_Tamburins
 
 ##### Skils: <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Java--Script-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=black"/>
-##### 프로젝트 기간: 2024.06.06 ~ 2404.06.00 
+##### 프로젝트 기간: 2024.06.06 ~ 2404.06.16 
 ##### 프로젝트명: WEB PUBLISHING
 ##### 프로젝트 목표: 기존 브랜드 컨셉을 유지하면서, 탬버린즈의 신제품인 차량디퓨저 홍보를 메인으로하는 웹사이트를 제작 및 구현
 ##### 기대 효과: 신선하고 혁신적인 디자인을 통해 사용자 경험을 향상시키고자 함
